@@ -23,8 +23,16 @@ const App = () => {
 		}
 	};
 
+	//debounce 
 	useEffect(() => {
-		getMovieRequest(searchValue);
+		let timeout=null;
+		clearTimeout(timeout);
+
+		// Make a new timeout set to go off in 1000ms (1 second)
+		timeout = setTimeout(function () {
+			getMovieRequest(searchValue);
+		}, 2000);
+		
 	}, [searchValue]);
 
 	useEffect(() => {

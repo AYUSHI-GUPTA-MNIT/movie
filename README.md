@@ -1,1 +1,2 @@
 
+When you type movie name in search box (added debounce) then it hit an api and get the values from api rendered the list.On each movie given choice if yu want to add to favourites then the favourite movie list get also stored into local storage.You can remove the movie also from the list.
